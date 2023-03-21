@@ -140,3 +140,7 @@
 2023-03-19 14:16:45,005:INFO:flipkrat.py:login popup handled
 2023-03-19 14:16:45,309:INFO:flipkrat.py:Search begins for xyz
 2023-03-19 14:17:17,482:INFO:flipkrat.py:Thread run completed
+2023-03-19 20:09:52,276:INFO:flipkrat.py:Url hitted
+2023-03-19 20:09:52,398:INFO:flipkrat.py:login popup handled
+2023-03-19 20:09:52,783:INFO:flipkrat.py:Search begins for iphone
+2023-03-19 20:09:54,590:INFO:flipkrat.py:Data saved in scrapper file
