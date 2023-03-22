@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-     <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <title>Scrapping Demo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -9,30 +10,63 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
-<body>
-    <div class="container">
 
-        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-        <ul class="navbar-nav">
-            <li class="nav-item">
-            <a class="nav-link" href="/"><b>Search for feedback</b></a>
-            </li>
-        </ul>
-        </nav>
-        <div class="content">
-            <br>
-            <h1 style="text-align: center"><i>Search for the Product.</i></h1><br>
-            <h4 style="text-align: center"><b>Note:</b>If you are searching for product which contain numeric value in it add '-'
-                between the text and numeric value.<br>For eg. Iphone7 can be written as Iphone-7</h4><br><br>
-             <div class="form">
-                <form action="/" method="POST">
-                    <label><b>Enter product to be searched:</b></label> <input type="text" name="content" id="content" ><br><br>
-                    <label><b>Enter the expected review count you need:</b></label> <input type="text" name="expected_review" id="expected_review"><br><br>
-                    <!--<label><b>If you have id with you enter here:</b></label> <input type="text" name="id" id="id" ><br><br>-->
-                    <input type="submit" value="Search">
-                </form>
-             </div>
+<body>
+    <section class="vh-100 bg-image"
+        style="background-image: url('https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');">
+        <div class="d-flex align-items-center h-100">
+            <div class="container h-100">
+                <div class="row d-flex justify-content-end align-items-center h-100">
+                    <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                        <div class="card" style="border-radius: 15px;">
+                            <div class="card-body p-5">
+                                <h2 class="text-uppercase text-center mb-5">Search a Product</h2>
+
+                                <form action="/" method="POST">
+
+                                    <div class="form-outline mb-4">
+                                        <input name="content" type="text" id="form3Example1cg" class="form-control form-control-lg" />
+                                        <label class="form-label fw-bold" for="form3Example1cg">Product Name</label>
+                                    </div>
+
+                                    <div class="form-outline mb-4">
+                                        <input type="text" name="expected_review" id="form3Example3cg" class="form-control form-control-lg" />
+                                        <label class="form-label fw-bold" for="form3Example3cg">No of Reviews</label>
+                                    </div>
+                                    <div class="d-flex justify-content-center mb-5">
+                                        <button type="submit"
+                                            class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">submit</button>
+                                    </div>
+
+                                    <!-- <p class="text-center mt-5 mb-0"></p> -->
+
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
 </body>
+
 </html>
+
+
+<!--<div class="container">-->
+<!--        <div class="content">-->
+<!--            <br>-->
+<!--            <h1 style="text-align: center"><i>Search for the Product.</i></h1><br>-->
+<!--            <h4 style="text-align: center"><b>Note:</b>If you are searching for product which contain numeric value in it add '-'-->
+<!--                between the text and numeric value.<br>For eg. Iphone7 can be written as Iphone-7</h4><br><br>-->
+<!--             <div class="form">-->
+<!--                <form action="/" method="POST">-->
+<!--                    <label><b>Enter product to be searched:</b></label> <input type="text" name="content" id="content" ><br><br>-->
+<!--                    <label><b>Enter the expected review count you need:</b></label> <input type="text" name="expected_review" id="expected_review"><br><br>-->
+<!--                    &lt;!&ndash;<label><b>If you have id with you enter here:</b></label> <input type="text" name="id" id="id" ><br><br>&ndash;&gt;-->
+<!--                    <input type="submit" value="Search">-->
+<!--                </form>-->
+<!--             </div>-->
+<!--        </div>-->
+<!--    </div>-->

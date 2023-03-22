@@ -11,6 +11,7 @@ import pandas as pd
 from mongoDBOperations import MongoDBManagement
 from FlipkratScrapping import FlipkratScrapper
 from selenium import webdriver
+from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 from webdriver_manager.chrome import ChromeDriverManager
 
 rows = {}
@@ -29,7 +30,19 @@ chrome_options.add_argument('--disable-gpu')
 chrome_options.add_argument('--no-sandbox')
 chrome_options.add_argument("disable-dev-shm-usage")
 
-#To avoid the time out issue on heroku
+
+# options = webdriver.ChromeOptions()
+# options.binary_location = '/usr/bin/google-chrome'
+# options.add_argument('headless')
+# options.add_argument('--no-sandbox')
+# options.add_argument("disable-dev-shm-usage")
+
+
+# driver = webdriver.Chrome(chrome_options=options)
+# executor_url = driver.command_executor._url
+# session_id = driver.session_id
+# driver.get("http://www.google.com")
+
 class threadClass:
 
     def __init__(self, expected_review, searchString, scrapper_object, review_count):
